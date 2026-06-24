@@ -6,7 +6,7 @@ df = pd.read_csv("houses.csv")
 
 # How does size relate to price?
 plt.figure(figsize=(8, 5))
-plt.scatter(df["Square_Footage"], df["Price"], alpha=0.4, color="#5C8DFF")
+plt.scatter(df["Square_Footage"], df["House_Price"], alpha=0.4, color="#5C8DFF")
 plt.xlabel("Square Footage")
 plt.ylabel("Price ($)")
 plt.title("Size vs Price")
