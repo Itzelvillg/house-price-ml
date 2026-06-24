@@ -43,7 +43,7 @@ We're using the **[Home Value Insights](https://www.kaggle.com/datasets/prokshit
 | `Num_Bathrooms` | Number of bathrooms |
 | `Year_Built` | Year the house was built |
 | `Lot_Size` | Size of the land (in acres) |
-| `Price` |  What we're trying to predict |
+| `House_Price` |  What we're trying to predict |
 
 Download it from Kaggle and save it as `houses.csv` inside the project folder.
 
@@ -104,7 +104,7 @@ features = ["Square_Footage", "Num_Bedrooms", "Num_Bathrooms",
             "Year_Built", "Lot_Size"]
 
 X = df[features]   # inputs
-y = df["Price"]    # output we want to predict
+y = df["House_Price"]    # output we want to predict
 
 # ── 3. Split into train and test ──────────────────────────────
 # 80% to learn from, 20% to test honestly
@@ -177,7 +177,7 @@ df = pd.read_csv("houses.csv")
 
 # How does size relate to price?
 plt.figure(figsize=(8, 5))
-plt.scatter(df["Square_Footage"], df["Price"], alpha=0.4, color="#5C8DFF")
+plt.scatter(df["Square_Footage"], df["House_Price"], alpha=0.4, color="#5C8DFF")
 plt.xlabel("Square Footage")
 plt.ylabel("Price ($)")
 plt.title("Size vs Price")
