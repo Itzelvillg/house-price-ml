@@ -14,7 +14,7 @@ features = ["Square_Footage", "Num_Bedrooms", "Num_Bathrooms",
             "Year_Built", "Lot_Size"]
 
 X = df[features]   # inputs
-y = df["Price"]    # output we want to predict
+y = df["House_Price"]    # output we want to predict
 
 # ── 3. Split into train and test ──────────────────────────────
 # 80% to learn from, 20% to test honestly
